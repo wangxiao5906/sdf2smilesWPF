@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+
+	  <!-- 单文件设置 -->
+	  <PublishSingleFile>true</PublishSingleFile>
+	  <SelfContained>false</SelfContained>
+	  <PublishTrimmed>false</PublishTrimmed>
+	  <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+
+	  <!-- 运行时平台（必须！） -->
+	  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="RDKit2DotNetStandard" Version="1.0.37" />
+  </ItemGroup>
+
+</Project>
